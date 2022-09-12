@@ -1,0 +1,59 @@
+@import url("https://fonts.googleapis.com/css2?family=Outfit:wght@400;700&display=swap");
+
+* {
+  /* Resets document to have 0 margin and 0 padding */
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  /* Changes the color of the body's background */
+  background-color: hsl(212, 45%, 89%);
+  font-family: "Outfit", sans-serif;
+}
+
+h3 {
+  line-height: 1.2;
+  padding-top: 25px;
+}
+
+p {
+  font-size: 15px;
+  padding: 15px;
+  font-weight: 400;
+}
+
+img {
+  width: 288px;
+  height: 288px;
+  border-radius: 10px;
+}
+
+.card-container {
+  /* Tells the container it will be a parent of whatever it's inside */
+  display: flex;
+  /* Justifies content horizontally to the center */
+  justify-content: center;
+  /* Aligns vertically to the center */
+  align-items: center;
+  background-color: hsl(0, 0%, 100%);
+  width: 324px;
+  border-radius: 20px;
+  text-align: center;
+  margin: 150px auto;
+}
+
+.card {
+  /* top | right | bottom | left */
+  padding: 15px 15px 45px 15px;
+}
+
+.attribution {
+  font-size: 11px;
+  text-align: center;
+}
+
+.attribution a {
+  color: hsl(228, 45%, 44%);
+}
