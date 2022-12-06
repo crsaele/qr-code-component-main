@@ -1,5 +1,12 @@
 @import url("https://fonts.googleapis.com/css2?family=Outfit:wght@400;700&display=swap");
 
+:root {
+  --main-background-color: hsl(212, 45%, 89%);
+  --card-background-color: hsl(0, 0%, 100%);
+  --custom-font: "Outfit";
+}
+
+
 * {
   /* Resets document to have 0 margin and 0 padding */
   margin: 0;
@@ -9,8 +16,8 @@
 
 body {
   /* Changes the color of the body's background */
-  background-color: hsl(212, 45%, 89%);
-  font-family: "Outfit", sans-serif;
+  background-color: var(--main-background-color);
+  font-family: var(--custom-font);
 }
 
 h3 {
@@ -37,7 +44,7 @@ img {
   justify-content: center;
   /* Aligns vertically to the center */
   align-items: center;
-  background-color: hsl(0, 0%, 100%);
+  background-color: var(--card-background-color);
   width: 324px;
   border-radius: 20px;
   text-align: center;
@@ -56,4 +63,5 @@ img {
 
 .attribution a {
   color: hsl(228, 45%, 44%);
+  text-decoration: none;
 }
